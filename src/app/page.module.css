@@ -7,6 +7,43 @@
   min-height: 100vh;
 }
 
+.select {
+  padding: 8px;
+  margin-top: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lossMessage {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+.winMessage {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+.card2{
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card2:hover {
+  background-color: #45a049;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -41,7 +78,14 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(5, minmax(20%, auto));
+  max-width: 100%;
+  width: var(--max-width);
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30%, auto));
   max-width: 100%;
   width: var(--max-width);
 }
